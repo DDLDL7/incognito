@@ -1,0 +1,145 @@
+/* style.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 1); /* Semi-transparent black header */
+    padding: 20px;
+    text-align: center;
+}
+
+
+.logo {
+    font-size: 2em;
+    font-weight: 700;
+    color: #ff6600; /* Orange logo */
+}
+
+nav {  /* Style the navigation links */
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    margin-top: 10px; /* Add some space between logo and nav */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 1rem;
+    margin: 0 0.5rem; /* Add some space between links */
+    transition: color 0.3s ease; /* Add a smooth transition for color change */
+}
+
+nav a:hover {
+    color: #ff6600; /* Change color to orange on hover */
+}
+
+
+.hero, .subscribe-hero { /* Apply hero styles to both sections */
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.hero-content, .subscribe-content { /* Content styles for both heroes */
+    flex: 1;
+    padding-right: 50px;
+    justify-self: center;
+}
+
+.hero h1, .subscribe-hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p, .subscribe-hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.hero button, .subscribe-hero button, .plan button { /* Button styles for all buttons */
+    background-color: #ff6600; /* Orange button */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover, .subscribe-hero button:hover, .plan button:hover {
+    background-color: #cc5200; /* Darker orange on hover */
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.features, .subscription-options { /* Styles for both feature sections */
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    flex-wrap: wrap; /* Make them responsive */
+}
+
+.feature, .plan { /* Combined styles for features and plans */
+    text-align: center;
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    border: 4px solid #cc5200
+}
+
+.feature:hover, .plan:hover {
+    transform: scale(1.05);
+}
+
+.feature img, .plan img { /* Image styles for both */
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.feature h2, .plan h3 { /* Heading styles */
+    color: #ff6600; /* Orange headings */
+    margin-bottom: 10px;
+}
+
+.plan-details { /* Plan details list styles */
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.plan-details li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* ... (Animations CSS from previous response) ... */
+
+/* ... (Media queries from previous response) ... */

@@ -1,0 +1,161 @@
+/* style.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #000; /* Black background - Applied to the BODY */
+    color: #fff; /* White text */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black header */
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: 700;
+    color: #ff6600; /* Orange logo */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 1rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6600;
+}
+
+.hero, .subscribe-hero, .buy-now-page { /* Apply hero styles to ALL hero/main sections */
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    /* No background color here - black from the body will show through */
+}
+
+.hero-content, .subscribe-content, .product-details .details { /* Content styles */
+    flex: 1;
+    padding-right: 50px;
+}
+
+.hero h1, .subscribe-hero h1, .product-details h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p, .subscribe-hero p, .product-details p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.hero button, .subscribe-hero button, .plan button, .product-details button, .product button { /* All buttons */
+    background-color: #ff6600; /* Orange button */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover, .subscribe-hero button:hover, .plan button:hover, .product-details button:hover, .product button:hover {
+    background-color: #cc5200; /* Darker orange on hover */
+}
+
+.hero-image, .product-details img { /* Image styles */
+    flex: 1;
+    text-align: center;
+    max-width: 80%; /* Or a specific max-width for product image */
+    height: auto;
+    border-radius: 10px;
+}
+
+.features, .subscription-options, .related-products { /* All section with background */
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    flex-wrap: wrap;
+}
+
+.feature, .plan, .related-products .product { /* All individual items in the sections */
+    text-align: center;
+    width: 30%; /* Adjust as needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly darker black */
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover, .plan:hover, .related-products .product:hover {
+    transform: scale(1.05);
+}
+
+.feature img, .plan img, .related-products .product img {
+    max-width: 100px; /* Or a specific max-width for product image */
+    margin-bottom: 20px;
+}
+
+.feature h2, .plan h3, .related-products .product h3 {
+    color: #ff6600; /* Orange headings */
+    margin-bottom: 10px;
+}
+
+.plan-details {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.plan-details li {
+    margin-bottom: 10px;
+}
+
+.price { /* Price style on Buy Now page */
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ff6600; /* Orange price */
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.quantity label {
+    margin-right: 10px;
+}
+
+.quantity input {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* ... (Animations CSS from previous responses) ... */
+/* ... (Media queries from previous responses) ... */

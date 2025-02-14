@@ -1,0 +1,162 @@
+/* style.css */
+body {
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    margin: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    min-height: 100vh; /* Ensure footer sticks to bottom */
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black header */
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: 700;
+    color: #ff6600; /* Orange logo */
+    text-decoration:none;
+
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.hero-content {
+    flex: 1; /* Take up available space */
+    padding-right: 50px; /* Add some space between text and image */
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    line-height: 1.5; /* Improve readability */
+}
+
+.hero button {
+    background-color: #ff6600; /* Orange button */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, opacity 0.15s; /* Smooth transition on hover */
+}
+
+.hero button:hover {
+    background-color: #cc5200; /* Darker orange on hover */
+}
+.hero button:active {
+    opacity: 0.4;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center; /* Center the image */
+}
+
+.hero-image img {
+    max-width: 80%; /* Make image responsive */
+    height: auto;
+    border-radius: 10px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly darker background for features */
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+}
+
+.feature img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.feature h2 {
+    margin-bottom: 10px;
+    color: #ff6600; /* Orange headings */
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Push footer to bottom */
+}
+
+/* style.css */
+/* ... (Existing CSS) ... */
+
+/* Add animations */
+.hero-content h1 {
+    animation: fadeInUp 1s ease-in-out; /* Fade in animation */
+}
+
+.hero-content p {
+    animation: fadeInUp 1.5s ease-in-out; /* Fade in animation with delay */
+}
+
+.hero-image img {
+    animation: fadeInRight 1s ease-in-out; /* Fade in from right */
+}
+
+.feature {
+    animation: fadeInUp 1s ease-in-out; /* Fade in animation for features */
+    opacity: 1; /* Initially hidden */
+}
+
+.feature:nth-child(2) { /* Slightly delayed animation for the second feature */
+    animation-delay: 0.3s;
+}
+
+.feature:nth-child(3) { /* Slightly delayed animation for the third feature */
+    animation-delay: 0.6s;
+}
+
+/* Keyframes for animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Move content slightly down initially */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Move content back to its original position */
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px); /* Move image slightly to the right initially */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Move image back to its original position */
+    }
+}
+
+.botos{
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
